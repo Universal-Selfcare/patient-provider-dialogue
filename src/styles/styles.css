@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/* === GLOBAL STYLES === */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #FFF5EE;
+  color: #8b4513;
+}
+
+h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #cd853f;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #8b4513;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+a {
+  color: #556b2f;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: darkolivegreen;
+}
+
+/* === LAYOUT === */
+.page-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+  position: relative;
+}
+
+.left-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1.2;
+}
+
+.left-box,
+.right-column {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(0, 50, 150, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.left-box:hover,
+.right-column:hover {
+  box-shadow: 0 12px 24px rgba(0, 50, 150, 0.15);
+}
+
+.right-column {
+  flex: 1;
+}
+
+/* === EXPANDED RIGHT OVERLAY === */
+.right-column.expanded-overlay {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 90vw;
+  height: 90vh;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  overflow-y: auto;
+  z-index: 1500;
+  transition: all 0.3s ease-in-out;
+}
+
+.page-container.dimmed::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* === BUTTONS === */
+button {
+  width: 140px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #d2b48c 0%, #d2b48c 100%);
+  color: #8b4513;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(161, 196, 253, 0.5);
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #d2b48c 0%, #d2b48c 100%);
+}
+
+/* === INPUTS & TEXTAREAS === */
+input[type="text"],
+input[type="date"],
+input[type="url"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  border: 1.5px solid #cdd9fb;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #8b4513;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+textarea {
+  resize: none;
+  height: 40px;
+}
+
+/* === CHECKBOX === */
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/* === SUGGESTION BOX === */
+.suggestion-box {
+  background-color: #fef2b5;
+  padding: 16px 22px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(238, 219, 105, 0.25);
+}
+
+.suggestion-box label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: #8b4513;
+}
+
+.suggestion-box input[type="text"],
+.suggestion-box textarea {
+  width: 100%;
+  max-width: 100%;
+}

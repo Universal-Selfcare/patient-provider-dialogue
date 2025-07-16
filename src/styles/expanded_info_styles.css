@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff5ee;
+    color: #8b4513;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #cd853f;
+    font-weight: 600;
+}
+.back-button {
+    display: inline-block;
+    text-align: center;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #d2b48c 0%, #d2b48c 100%);
+    color: #8b4513;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(161, 196, 253, 0.5);
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #d2b48c 0%, #d2b48c 100%);
+    transform: translateY(-2px);
+}
+
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0, 50, 150, 0.1);
+    margin-bottom: 24px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 12px 24px rgba(0, 50, 150, 0.15);
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    color: #cd853f;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #8b4513;
+    margin-bottom: 10px;
+}
+
+.card a {
+  color: 556b2f;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.card a:hover {
+  color: darkolivegreen;
+}
+
+
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.details-header h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #cd853f;
+    margin: 0;
+}
+
